@@ -1,67 +1,55 @@
-import React from "react";
-import { Shield } from "lucide-react";
-import "./Home.css";
+import { FaLocationArrow } from "react-icons/fa";
 
-
-const Home = () => {
+export default function Hero() {
   return (
-    <section className="hero-section">
+    <section className="min-h-screen flex items-center px-10 pt-24 bg-gradient-to-r from-[#0b1220] to-[#111827]">
       
-      <div className="hero-bg-glow"></div>
+     
+      <div className="w-full md:w-1/2 space-y-6">
+        <span className="bg-white/10 px-4 py-1 rounded-full text-sm">
+          Advanced Emergency Vehicle Safety
+        </span>
 
-      <div className="hero-container">
-        <div className="hero-grid">
+        <h1 className="text-5xl font-bold leading-tight">
+          Emergency Help <br />
+          <span className="text-red-500">Always Within Reach</span>
+        </h1>
 
-          
-          <div className="hero-content">
-            <div className="hero-badge">
-              <Shield size={18} />
-              <span>Advanced Safety Technology</span>
-            </div>
+        <p className="text-gray-300 max-w-xl">
+          A smart emergency vehicle assistance system that instantly alerts
+          your close contacts and escalates to admin & emergency services
+          with live GPS tracking.
+        </p>
 
-            <h1>
-              Your Safety, <br />
-              <span>Always Within Reach</span>
-            </h1>
-
-            <p>
-              Smart emergency assistance system with instant alerts,
-              live location tracking, and rapid response when you need it most.
-            </p>
-
-            <div className="hero-actions">
-              <button className="primary-btn">
-                Order Now – ₹12,999
-              </button>
-              <button className="secondary-btn">
-                Learn More
-              </button>
-            </div>
-
-            <div className="hero-stats">
-              <div>
-                <h3>24/7</h3>
-                <span>Protection</span>
-              </div>
-              <div>
-                <h3>30s</h3>
-                <span>Auto Alert</span>
-              </div>
-              <div>
-                <h3>GPS</h3>
-                <span>Live Tracking</span>
-              </div>
-            </div>
-          </div>
-
-          
-          <div className="hero-image">
-               <img src='car.png' alt="" />       </div>
-
+        <div className="flex gap-4">
+          <button className="bg-red-600 px-6 py-3 rounded-full">
+            Get Started
+          </button>
+          <button className="border border-white/30 px-6 py-3 rounded-full">
+            Learn More
+          </button>
         </div>
+
+        <div className="flex gap-10 pt-6 text-sm">
+          <div>
+            <h3 className="text-xl font-bold">24/7</h3>
+            Monitoring
+          </div>
+          <div>
+            <h3 className="text-xl font-bold">Live</h3>
+            GPS Tracking
+          </div>
+          <div>
+            <h3 className="text-xl font-bold">Instant</h3>
+            Alerts
+          </div>
+        </div>
+      </div>
+
+      {/* RIGHT */}
+      <div className="hidden md:block w-1/2">
+        <FaLocationArrow className="text-red-600 text-[300px] mx-auto opacity-30" />
       </div>
     </section>
   );
-};
-
-export default Home;
+}
