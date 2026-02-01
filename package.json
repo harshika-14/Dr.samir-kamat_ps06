@@ -1,0 +1,13 @@
+{
+  "name": "smart-car-emergency",
+  "version": "1.0.0",
+  "description": "Smart Car Emergency System",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cd 'smart emergency system' && npm run dev",
+    "build": "cd 'smart emergency system' && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

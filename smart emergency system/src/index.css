@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+ /* yeh pura home k hai yaad rkh*/
+.home {
+  min-height: 100vh;
+  
+  background: url('components/car.png' );
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100%;
+  
+  color: #ffffff;
+}
+
+
+.navbar {
+  height: 70px;
+  padding: 0 60px;
+  display: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-btn.login {
+  background: transparent;
+  color: #fff;
+}
+.nav-btn.login:hover {
+  background: #ffffff33;
+}
+
+.nav-btn.register {
+  background: #ff5722;
+  color: #fff;
+}
+.nav-btn.register:hover {
+  transform: scale(1.1);
+}
+
+.hero {
+  text-align: left;
+  margin-top: 90px;
+  padding-left: 60px;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #d6e4ea;
+}
+
+.hero p span {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.hero-actions {
+  margin-top: 35px;
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+}
+
+.primary-btn {
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+ 
+}
+.primary-btn:hover {
+  transform: scale(1.05);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff70;
+  padding: 14px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.secondary-btn:hover {
+  background: #ffffff33;
+}
+
+.features {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-card {
+  width: 260px;
+  padding: 30px 25px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #cfe3ea;
+}
